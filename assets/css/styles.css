@@ -888,6 +888,14 @@ h3 {
   gap: 18px;
 }
 
+.footer-requisites {
+  max-width: 760px;
+  margin: 6px 0 0;
+  color: rgba(255, 255, 255, 0.46);
+  font-size: 11px;
+  line-height: 1.4;
+}
+
 .mobile-sticky {
   position: fixed;
   z-index: 90;
