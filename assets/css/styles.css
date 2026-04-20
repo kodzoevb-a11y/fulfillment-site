@@ -128,12 +128,13 @@ button {
 
 .logo-mark {
   display: grid;
-  width: 46px;
+  width: 56px;
   height: 46px;
   place-items: center;
   color: var(--dark);
   background: var(--lime);
   border-radius: var(--radius);
+  font-size: 14px;
   font-weight: 800;
 }
 
@@ -304,6 +305,27 @@ h3 {
   margin: 24px 0 0;
   color: rgba(255, 255, 255, 0.82);
   font-size: 20px;
+}
+
+.hero-highlight {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 8px;
+  max-width: 860px;
+  margin-top: 22px;
+}
+
+.hero-highlight span {
+  display: inline-flex;
+  align-items: center;
+  min-height: 40px;
+  padding: 8px 12px;
+  color: var(--dark);
+  background: var(--lime);
+  border-radius: var(--radius);
+  font-size: 15px;
+  font-weight: 900;
+  line-height: 1.25;
 }
 
 .hero-actions {
@@ -1172,6 +1194,16 @@ h3 {
   .hero-points li {
     min-height: 58px;
     padding: 12px;
+    font-size: 14px;
+  }
+
+  .hero-highlight {
+    margin-top: 18px;
+  }
+
+  .hero-highlight span {
+    width: 100%;
+    min-height: 38px;
     font-size: 14px;
   }
 
