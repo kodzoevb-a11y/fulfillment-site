@@ -36,12 +36,6 @@ nav?.addEventListener("click", (event) => {
   }
 });
 
-document.querySelectorAll("[data-contact-pending]").forEach((link) => {
-  link.addEventListener("click", () => {
-    showToast("Телефон и WhatsApp будут добавлены после подтверждения контактов.");
-  });
-});
-
 const year = document.querySelector("[data-year]");
 if (year) {
   year.textContent = new Date().getFullYear();

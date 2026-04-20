@@ -682,6 +682,19 @@ h3 {
   font-weight: 800;
 }
 
+.contact-list a,
+.footer-phone a {
+  color: inherit;
+  transition: color 160ms ease;
+}
+
+.contact-list a:hover,
+.contact-list a:focus-visible,
+.footer-phone a:hover,
+.footer-phone a:focus-visible {
+  color: var(--lime);
+}
+
 .todo {
   color: var(--lime);
 }
@@ -896,6 +909,13 @@ h3 {
   line-height: 1.4;
 }
 
+.footer-phone {
+  margin: 6px 0 0;
+  color: rgba(255, 255, 255, 0.72);
+  font-size: 13px;
+  line-height: 1.35;
+}
+
 .mobile-sticky {
   position: fixed;
   z-index: 90;
@@ -903,7 +923,7 @@ h3 {
   bottom: 14px;
   left: 14px;
   display: none;
-  grid-template-columns: 1fr 1fr;
+  grid-template-columns: repeat(3, minmax(0, 1fr));
   gap: 8px;
   padding: 8px;
   background: rgba(16, 19, 18, 0.92);
@@ -917,10 +937,13 @@ h3 {
   display: grid;
   min-height: 46px;
   place-items: center;
+  padding: 0 6px;
   color: var(--surface);
   background: var(--green);
   border-radius: var(--radius);
+  font-size: 13px;
   font-weight: 900;
+  text-align: center;
 }
 
 .mobile-sticky a:last-child {
@@ -1177,7 +1200,7 @@ h3 {
 
   .hero-actions {
     display: grid;
-    grid-template-columns: repeat(2, minmax(0, 1fr));
+    grid-template-columns: 1fr;
   }
 
   .btn {
